@@ -61,6 +61,7 @@ body
 
 footer
 	background-color: rgb(43, 100, 246)
+	border-top-width: 1rem
 
 
 .hero-head
@@ -84,7 +85,23 @@ footer
 	text-align: center
 	margin-right: auto
 	margin-left: auto
+	border-radius: 3% !important
+
+$fa-hover: 5.5rem
+
+.hero-over:hover>.card-body>.card-title
+	transition: 250ms
+	font-size: $fa-hover
+	color: black
+
+.card-title
+	transition: 250ms
+	color: #505050
+	height: $fa-hover
 
 #hero-container>.row
 	--bs-gutter-x: 0
+
+.container:last-of-type
+	padding-bottom: 2rem
 
