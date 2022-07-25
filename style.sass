@@ -1,3 +1,5 @@
+$transition: 250ms
+
 .search-click
 	border: 1px solid #ccc
 	outline: none
@@ -28,50 +30,24 @@
 	left: 0
 	padding: 10px
 
-
 nav
-	transition: 500ms
+	transition: $transition
 	background-color: #fff
 	opacity: 0
 
-
-.carousel-item
-	width: 100vw
-	height: 50vh
-	padding: 0 5vw 0 5vw
-
-
-.carousel-item>.card
-	border-radius: 0
-	border-color: #00000000
-
-
-.carousel-control-next, .carousel-control-prev
-	width: 5%
-
-
-.carousel-image
-	width: 100%
-	position: center
-
-
 body
 	background-color: #99c2ff
-
 
 footer
 	background-color: rgb(43, 100, 246)
 	border-top-width: 1rem
 
-
 .hero-head
 	font-size: calc(2rem + 5.5vw)
 	font-weight: 300
 
-
 .hero-body
-	color: #c5c6d9
-
+	color: #eeefff
 
 .hero
 	z-index: 0
@@ -80,6 +56,7 @@ footer
 	position: absolute
 
 .hero-over
+	transition: 250ms
 	width: min(100%, 85vw)
 	min-height: 300px
 	text-align: center
@@ -87,21 +64,27 @@ footer
 	margin-left: auto
 	border-radius: 3% !important
 
+.hero-over-drop
+	@extend .hero-over
+
+.hero-over-drop:hover
+	transition: $transition
+	box-shadow: rgba(0, 0, 0, 0.15) 2.6px 2.6px 3.3px
+
 $fa-hover: 5.5rem
 
-.hero-over:hover>.card-body>.card-title
-	transition: 250ms
+.hero-over:hover > .card-body > .card-title
+	transition: $transition
 	font-size: $fa-hover
 	color: black
 
 .card-title
-	transition: 250ms
+	transition: $transition
 	color: #505050
 	height: $fa-hover
 
-#hero-container>.row
+#hero-container > .row
 	--bs-gutter-x: 0
 
 .container:last-of-type
 	padding-bottom: 2rem
-
