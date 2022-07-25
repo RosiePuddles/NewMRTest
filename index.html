@@ -15,8 +15,8 @@
 	<script src="https://kit.fontawesome.com/f12f8d5763.js" crossorigin="anonymous"></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
-<header>
-	<nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark" id="navbar">
+<header class="sticky-top">
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar">
 		<div class="container-fluid px-5">
 			<a class="navbar-brand" href="#" style="font-size: 25px"><b><i><span style="color: #2b64f6">#New</span><span style="color: #ea3323">MR</span></i></b></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +38,10 @@
 	</nav>
 </header>
 
-<div class="min-vh-100" id="hero-container">
+<div id="hero-container">
 	<div class="hero" id="hello"></div>
 	<div class="row align-items-center">
-		<div class="col-2 min-vh-100"></div>
+		<div class="col-2"></div>
 		<div class="col text-center" style="z-index: 1">
 			<h1 class="hero-head"><b><i><span style="color: #2b64f6">#New</span><span style="color: #ea3323">MR</span></i></b></h1><h2 class="hero-body">The Home of Market Research</h2>
 		</div>
@@ -111,7 +111,6 @@
 	</div>
 </footer>
 </body>
-<script src="js/index.min.js"></script>
 <script>
 VANTA.FOG({
 	el: "#hello",
