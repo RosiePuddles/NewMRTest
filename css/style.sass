@@ -1,0 +1,52 @@
+@import "root"
+$card-main: 130px
+$card-extra: 30px
+
+.radio-image
+	background-size: auto 100%
+	background-position: center
+
+
+.radio-body
+	padding-left: 0 !important
+
+.radio-inner
+	padding-left: 1.5rem
+	border-bottom-width: 2px
+	border-bottom-style: solid
+	border-image: linear-gradient(to right, black 70%, $back) 1
+
+.radio-inner-last
+	@extend .radio-inner
+	border-width: 0
+	padding-top: 5px
+
+.container
+	padding-bottom: 2rem
+
+.card-title
+	height: auto
+	margin-bottom: 1rem
+
+.card-body
+	height: $card-main
+
+.card-body-upper
+	@extend .card-body
+	height: $card-main + $card-extra
+	overflow: clip
+
+.card-body-lower
+	height: $card-extra
+	background: linear-gradient(to top, rgba(100%, 100%, 100%, 100%), #00000000)
+	border-left: 0
+
+.card-body-link
+	height: auto
+	padding-top: 0
+	background-color: white
+
+.card-img-top
+	height: 300px
+	background-size: auto 100%
+	background-position: center

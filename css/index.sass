@@ -1,0 +1,41 @@
+@import "root"
+$fa-hover: 5.5rem
+
+.hero-head
+	font-size: calc(2rem + 5.5vw)
+	font-weight: 300
+
+.hero-body
+	color: #eeefff
+
+.hero
+	z-index: 0
+	height: $hero-height + 20vh
+	position: absolute
+	width: 100%
+
+.hero-over
+	transition: 250ms
+	width: min(100%, 85vw)
+	min-height: 300px
+	text-align: center
+	margin-right: auto
+	margin-left: auto
+	border-radius: 3% !important
+	height: 100%  !important
+	.card-button
+		padding-bottom: 1rem
+
+.hero-over:hover > .card-body > .card-title
+	transition: $transition
+	font-size: $fa-hover
+	color: black
+
+.card-title
+	transition: $transition
+	color: #505050
+	height: $fa-hover
+
+#hero-container > .row
+	--bs-gutter-x: 0
+	min-height: $hero-height
