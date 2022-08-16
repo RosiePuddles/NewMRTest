@@ -10,7 +10,9 @@
 	<!-- Fontawesome Icons -->
 	<script src="https://kit.fontawesome.com/f12f8d5763.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/events.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" crossorigin="anonymous"></script>
 	<script src="js/script.min.js"></script>
+	<script src="js/event.min.js"></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
 
@@ -21,8 +23,12 @@
 			<p class="lead">Tuesday 14<sup>th</sup> June 2022</p>
 		</div>
 	</div>
-	<div class="row">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et vestibulum metus. Etiam cursus ex rutrum, aliquet nisl eu, elementum dui. Curabitur efficitur imperdiet condimentum. Aenean a enim id quam ultrices feugiat ac non lectus. Donec pharetra quam rutrum neque interdum, eu volutpat velit condimentum. Proin rutrum elit a molestie dapibus. Nulla facilisi. Duis vel efficitur quam. Proin auctor eros quam, in pellentesque velit faucibus a. Duis viverra orci purus, in egestas lectus maximus in. Integer scelerisque porta erat, et ultricies elit pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi dictum nibh sed magna varius, at tincidunt diam placerat. Vestibulum euismod lacus pulvinar sapien pretium porttitor. Pellentesque non aliquet quam.</p>
+	<div class="row py-3">
+		<div class="col-sm-12 col-md-4 col-lg-2 ad text-center">Ads go here</div>
+		<div class="col-sm-12 col-md-4 col-lg-8">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et vestibulum metus. Etiam cursus ex rutrum, aliquet nisl eu, elementum dui. Curabitur efficitur imperdiet condimentum. Aenean a enim id quam ultrices feugiat ac non lectus. Donec pharetra quam rutrum neque interdum, eu volutpat velit condimentum. Proin rutrum elit a molestie dapibus. Nulla facilisi. Duis vel efficitur quam. Proin auctor eros quam, in pellentesque velit faucibus a. Duis viverra orci purus, in egestas lectus maximus in. Integer scelerisque porta erat, et ultricies elit pellentesque vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi dictum nibh sed magna varius, at tincidunt diam placerat. Vestibulum euismod lacus pulvinar sapien pretium porttitor. Pellentesque non aliquet quam.</p>
+		</div>
+		<div class="col-sm-12 col-md-4 col-lg-2 ad text-center">Ads go here</div>
 	</div>
 	<div class="accordion accordion-flush" id="accordionExample">
 		<div class="accordion-item">
@@ -80,9 +86,21 @@
 							</div>
 						</div>
 					</div>
+					<div id="talk1-main" class="modal fade">
+						<div class="modal-dialog modal-dialog-centered modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<iframe id="talk1-inner" src="https://www.youtube.com/embed/68QYGzDtu_I" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
 					At KNow Research, we have found 3 key ways to use these boards in gathering and reporting on insights. They’ve upped our collaborative game, and they can do the same for you! Learn ways to make your interactions with participants, clients, and remote teams more interactive and engaging through the use of virtual collaborative tools. Not only can you use these platforms to recreate the backroom experience for participants and clients, you can also use them for analysis and reporting.
 					<div class="row text-end">
-						<a href="">Listen now <i class="fa-solid fa-arrow-right-long"></i></a>
+						<a href="#talk1-main" data-bs-toggle="modal">Listen now <i class="fa-solid fa-arrow-right-long"></i></a>
 					</div>
 				</div>
 			</div>
