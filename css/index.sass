@@ -1,5 +1,6 @@
 @import "root"
 $fa-hover: 5.5rem
+$hero-height: 40vh
 
 .hero-head
 	font-size: calc(2rem + 5.5vw)
@@ -39,3 +40,37 @@ $fa-hover: 5.5rem
 #hero-container > .row
 	--bs-gutter-x: 0
 	min-height: $hero-height
+
+.carouselAdImg
+	height: 100%
+	width: auto
+	overflow: hidden
+
+#adCarousel
+	height: min(300px,20vh)
+	padding-top: 5px
+	position: relative
+	overflow: hidden
+	width: 100%
+	padding-left: 0
+	padding-right: 0
+	div
+		position: absolute
+	::before,::after
+		content: none
+
+.adCarouselContainer
+	::before,::after
+		content: " "
+		width: 5vw
+		z-index: 1
+		height: 100%
+		display: block
+		position: absolute
+	::before
+		background: linear-gradient(to right, $back 20%, #0000)
+	::after
+		right: 0
+		background: linear-gradient(to left, $back 20%, #0000)
+	overflow: hidden
+	padding-bottom: 5px
