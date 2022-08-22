@@ -5,11 +5,12 @@ function init() {
 }
 
 function header() {
-	let path = document.URL.slice(window.location.origin.length + 1).split("/").pop()
+	let path = document.URL.slice(window.location.origin.length + 1).split("/").pop().split("?")[0]
 	return "<header class=\"sticky-top\"><nav class=\"navbar navbar-expand-lg bg-dark navbar-dark\" id=\"navbar\"><div class=\"container-fluid px-5\"><a class=\"navbar-brand\" href=\"index.html\" style=\"font-size: 25px\"><b><i><span style=\"color: #2b64f6\">#New</span><span style=\"color: #ea3323\">MR</span></i></b></a><button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button><div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\"><div class=\"navbar-nav ms-auto\">" + [
 		[
 			{href: "index.html", name: "Home"},
-			{href: "blog_index.html", name: "Blog and Radio"},
+			{href: "blog_index.html", name: "Blog"},
+			{href: "radio_index.html", name: "Radio"},
 			{href: "events.html", name: "Events"}
 		],
 		[
